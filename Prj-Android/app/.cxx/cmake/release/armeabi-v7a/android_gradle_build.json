@@ -1,0 +1,284 @@
+
+{
+	"buildFiles" : [ "/Users/smkk/HyperFT/Prj-Android/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/Users/smkk/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/smkk/HyperFT/Prj-Android/app/.cxx/cmake/release/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"IlmImf-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "IlmImf",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/libIlmImf.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"Tracking-lib-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "Tracking-lib",
+			"buildCommand" : "/Users/smkk/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/smkk/HyperFT/Prj-Android/app/.cxx/cmake/release/armeabi-v7a --target Tracking-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/smkk/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/smkk/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -DTracking_lib_EXPORTS -I/Users/smkk/ncnn-android-lib/include -isystem /Users/smkk/OpenCV-android-sdk/sdk/native/jni/include -I../../../../src/main/cpp/include -isystem /Users/smkk/OpenCV-android-sdk/sdk/native/jni/include/opencv  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=c++11 -fopenmp -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/smkk/HyperFT/Prj-Android/app/src/main/cpp/mtcnn.cpp",
+					"workingDirectory" : "/Users/smkk/HyperFT/Prj-Android/app/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/smkk/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/smkk/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -DTracking_lib_EXPORTS -I/Users/smkk/ncnn-android-lib/include -isystem /Users/smkk/OpenCV-android-sdk/sdk/native/jni/include -I../../../../src/main/cpp/include -isystem /Users/smkk/OpenCV-android-sdk/sdk/native/jni/include/opencv  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=c++11 -fopenmp -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/smkk/HyperFT/Prj-Android/app/src/main/cpp/tracking-lib.cpp",
+					"workingDirectory" : "/Users/smkk/HyperFT/Prj-Android/app/.cxx/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/smkk/HyperFT/Prj-Android/app/build/intermediates/cmake/release/obj/armeabi-v7a/libTracking-lib.so",
+			"toolchain" : "14533713603345498049"
+		},
+		"libcpufeatures-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libcpufeatures",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/libcpufeatures.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"libjasper-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libjasper",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/liblibjasper.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"libjpeg-turbo-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libjpeg-turbo",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/liblibjpeg-turbo.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"libncnn-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libncnn",
+			"buildType" : "release",
+			"output" : "/Users/smkk/ncnn-android-lib/armeabi-v7a/libncnn.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"libpng-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libpng",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/liblibpng.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"libprotobuf-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libprotobuf",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/liblibprotobuf.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"libtiff-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libtiff",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/liblibtiff.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"libwebp-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libwebp",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/liblibwebp.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_calib3d-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_calib3d",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_calib3d.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_core-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_core",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_core.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_dnn-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_dnn",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_dnn.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_features2d-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_features2d",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_features2d.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_flann-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_flann",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_flann.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_highgui-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_highgui",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_highgui.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_imgcodecs-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_imgcodecs",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_imgcodecs.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_imgproc-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_imgproc",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_imgproc.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_java-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_java",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/libs/armeabi-v7a/libopencv_java3.so",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_ml-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_ml",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_ml.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_objdetect-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_objdetect",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_objdetect.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_photo-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_photo",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_photo.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_shape-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_shape",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_shape.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_stitching-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_stitching",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_stitching.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_superres-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_superres",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_superres.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_video-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_video",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_video.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_videoio-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_videoio",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_videoio.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"opencv_videostab-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_videostab",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/staticlibs/armeabi-v7a/libopencv_videostab.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"tbb-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "tbb",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/libtbb.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"tegra_hal-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "tegra_hal",
+			"buildType" : "release",
+			"output" : "/Users/smkk/OpenCV-android-sdk/sdk/native/3rdparty/libs/armeabi-v7a/libtegra_hal.a",
+			"toolchain" : "14533713603345498049"
+		},
+		"yuv-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "yuv",
+			"buildType" : "release",
+			"output" : "../../../../src/main/jniLibs/armeabi-v7a/libyuv.so",
+			"toolchain" : "14533713603345498049"
+		}
+	},
+	"toolchains" : 
+	{
+		"14533713603345498049" : 
+		{
+			"cCompilerExecutable" : "/Users/smkk/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/smkk/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

@@ -8,10 +8,6 @@ import android.opengl.EGLSurface;
 import android.view.Surface;
 
 
-/**
- * Created by 海米 on 2017/8/15.
- */
-
 public class EGLUtils {
 
     private static final int EGL_RECORDABLE_ANDROID = 0x3142;

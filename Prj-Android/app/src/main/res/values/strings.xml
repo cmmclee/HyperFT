@@ -8,4 +8,6 @@
     <string name="can_not_record_tip">暂时无法录制</string>
     <string name="record_space_tip">存储空间不足</string>
     <string name="record_time_end_tip">录制已到限定时长</string>
+
+    <string name="show_landmarks">显示人脸关键点</string>
 </resources>

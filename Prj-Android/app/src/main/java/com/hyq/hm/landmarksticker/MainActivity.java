@@ -35,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
     private String modelPath = Environment.getExternalStorageDirectory()
             + File.separator + "FaceTracking";
+
     public void copyFilesFromAssets(Context context, String oldPath, String newPath) {
         try {
             String[] fileNames = context.getAssets().list(oldPath);
-            if (fileNames.length > 0) {
+            if (fileNames != null && fileNames.length > 0) {
                 // directory
                 File file = new File(newPath);
                 if (!file.mkdir()) {
@@ -173,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         mHandlerThread.start();
         mHandler = new Handler(mHandlerThread.getLooper());
 
-        Log.e("TAG","=========");
+        Log.e("TAG", "=========");
         cameraOverlap.setPreviewCallback(new Camera.PreviewCallback() {
             @Override
             public void onPreviewFrame(byte[] data, Camera camera) {
@@ -230,11 +231,11 @@ public class MainActivity extends AppCompatActivity {
                             float h = rect.top - rect.bottom;
                             float w = rect.right - rect.left;
 
-                            float padd= 0.03f;
+                            float padd = 0.03f;
 
                             //r.top += h *padd*5;
 
-                            r.bottom -= h*padd;
+                            r.bottom -= h * padd;
 
                             r.right += w * padd;
                             r.left -= w * padd;
@@ -300,12 +301,12 @@ public class MainActivity extends AppCompatActivity {
 //                         }
 
 //                            int[] arr1 = {50, 72, 69, 45, 105};
-  //                          for (int i = 0; i < arr1.length; i++)
-  //                            float x = points[i * 2];
- //                               float y = points[i * 2 + 1];
- //                               points[i * 2] = points[arr1[i] * 2];
- //                               points[i * 2 + 1] = points[arr1[i] * 2 + 1];
- //                               points[arr1[i] * 2] = x;
+                            //                          for (int i = 0; i < arr1.length; i++)
+                            //                            float x = points[i * 2];
+                            //                               float y = points[i * 2 + 1];
+                            //                               points[i * 2] = points[arr1[i] * 2];
+                            //                               points[i * 2 + 1] = points[arr1[i] * 2 + 1];
+                            //                               points[arr1[i] * 2] = x;
 //                                points[arr1[i] * 2 + 1] = y;
 //                           }
 
@@ -313,7 +314,7 @@ public class MainActivity extends AppCompatActivity {
                                 //mPoints.get(face).setPoints(points);
                                 //mPoints.get(face).drawPoints(mFrame.getRect(),r.ID);
                                 mPoints.get(face).setRects(points_rect);
-                                mPoints.get(face).drawRects(mFrame.getRect(),r.ID);
+                                mPoints.get(face).drawRects(mFrame.getRect(), r.ID);
                             }
                             face++;
                             if (face == maxFace) {
@@ -342,7 +343,8 @@ public class MainActivity extends AppCompatActivity {
                         mEglUtils.initEGL(holder.getSurface());
                         mFramebuffer.initFramebuffer();
                         mFrame.initFrame();
-                        mFrame.setSize(mEglUtils.getWidth(), mEglUtils.getHeight(), CameraOverlap.PREVIEW_HEIGHT, CameraOverlap.PREVIEW_WIDTH);
+                        mFrame.setSize(mEglUtils.getWidth(), mEglUtils.getHeight(),
+                                CameraOverlap.PREVIEW_HEIGHT, CameraOverlap.PREVIEW_WIDTH);
                         for (int i = 0; i < maxFace; i++) {
                             mPoints.get(i).initPoints();
                         }
@@ -451,13 +453,13 @@ public class MainActivity extends AppCompatActivity {
         cameraOverlap.release();
         mFramebuffer.release();
         mFrame.release();
-        for (int i = 0; i < maxFace;i++){
+        for (int i = 0; i < maxFace; i++) {
             mPoints.get(i).release();
         }
-        for (int i = 0; i < maxFace* bitmapCount;i++){
+        for (int i = 0; i < maxFace * bitmapCount; i++) {
             mBitmaps.get(i).release();
         }
-        if(mEglUtils != null){
+        if (mEglUtils != null) {
             mEglUtils.release();
             mEglUtils = null;
         }

@@ -1,0 +1,3 @@
+/Users/smkk/HyperFT/Prj-Android/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/smkk/HyperFT/Prj-Android/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/smkk/HyperFT/Prj-Android/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/Tracking-lib.dir

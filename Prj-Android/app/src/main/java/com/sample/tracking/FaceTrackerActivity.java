@@ -27,12 +27,11 @@ public class FaceTrackerActivity extends Activity {
     public void copyFilesFromAssets(Context context, String oldPath, String newPath) {
         try {
             String[] fileNames = context.getAssets().list(oldPath);
-            if (fileNames.length > 0) {
+            if (fileNames != null && fileNames.length > 0) {
                 // directory
                 File file = new File(newPath);
-                if (!file.mkdir())
-                {
-                    Log.d("mkdir","can't make folder");
+                if (!file.mkdir()) {
+                    Log.d("mkdir", "can't make folder");
 
                 }
 
@@ -59,8 +58,7 @@ public class FaceTrackerActivity extends Activity {
         }
     }
 
-    void InitModelFiles()
-    {
+    void InitModelFiles() {
 
         String assetPath = "FaceTracking";
         String sdcardPath = Environment.getExternalStorageDirectory()
@@ -68,9 +66,9 @@ public class FaceTrackerActivity extends Activity {
         copyFilesFromAssets(this, assetPath, sdcardPath);
 
     }
-    private String[] denied;
-    private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CAMERA};
 
+    private String[] denied;
+    private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
 
 
     @Override
@@ -78,7 +76,7 @@ public class FaceTrackerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multitracker);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,  WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             ArrayList<String> list = new ArrayList<>();
@@ -125,7 +123,8 @@ public class FaceTrackerActivity extends Activity {
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
-    private void init(){
+
+    private void init() {
         InitModelFiles();
     }
 

@@ -1,0 +1,10 @@
+# ninja log v5
+0	2817	0	CMakeFiles/Tracking-lib.dir/src/main/cpp/mtcnn.cpp.o	618512de024c8f85
+1	5807	0	CMakeFiles/Tracking-lib.dir/src/main/cpp/tracking-lib.cpp.o	b9be530ca3162985
+5809	10424	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libTracking-lib.so	7b429580e26b58f0
+35	3422	0	CMakeFiles/Tracking-lib.dir/src/main/cpp/mtcnn.cpp.o	618512de024c8f85
+37	8957	0	CMakeFiles/Tracking-lib.dir/src/main/cpp/tracking-lib.cpp.o	b9be530ca3162985
+8957	13297	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libTracking-lib.so	7b429580e26b58f0
+5	2884	0	CMakeFiles/Tracking-lib.dir/src/main/cpp/mtcnn.cpp.o	618512de024c8f85
+6	4468	0	CMakeFiles/Tracking-lib.dir/src/main/cpp/tracking-lib.cpp.o	b9be530ca3162985
+4468	5937	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libTracking-lib.so	7b429580e26b58f0

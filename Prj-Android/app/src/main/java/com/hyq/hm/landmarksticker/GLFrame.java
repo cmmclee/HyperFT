@@ -8,9 +8,6 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
-/**
- * Created by 海米 on 2017/8/16.
- */
 
 public class GLFrame {
 

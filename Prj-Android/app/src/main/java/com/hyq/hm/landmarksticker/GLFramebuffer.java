@@ -5,10 +5,6 @@ import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
 
 
-/**
- * Created by 海米 on 2017/8/16.
- */
-
 public class GLFramebuffer {
 
     private float[] mSTMatrix = new float[16];

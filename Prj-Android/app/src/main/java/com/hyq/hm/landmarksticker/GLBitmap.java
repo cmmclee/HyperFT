@@ -11,9 +11,6 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
-/**
- * Created by 海米 on 2018/10/25.
- */
 
 public class GLBitmap {
 

@@ -1,0 +1,8 @@
+Executable : /Users/smkk/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+--build
+/Users/smkk/HyperFT/Prj-Android/app/.cxx/cmake/debug/armeabi-v7a
+--target
+Tracking-lib
+jvmArgs : 
+

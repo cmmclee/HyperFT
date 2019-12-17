@@ -132,6 +132,7 @@ cv::Rect boundingRect(const std::vector<cv::Point> &pts){
         }
         return cv::Rect(xmin,ymin,xmax-xmin,ymax-ymin);
     }
+    return cv::Rect();
 }
 
 

@@ -9,9 +9,6 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.util.Random;
 
-/**
- * Created by 海米 on 2018/11/29.
- */
 
 public class GLPoints {
     private FloatBuffer vertexBuffer;

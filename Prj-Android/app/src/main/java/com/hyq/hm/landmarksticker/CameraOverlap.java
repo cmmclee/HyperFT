@@ -8,9 +8,6 @@ import android.view.SurfaceHolder;
 
 import java.util.List;
 
-/**
- * Created by 海米 on 2018/11/29.
- */
 
 public class CameraOverlap {
 
